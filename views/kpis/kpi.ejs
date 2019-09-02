@@ -1,0 +1,36 @@
+<% include ../partials/header %>
+
+<div class="col-lg-auto px-0  justify-content-center">
+
+    <div class="col-lg-8 mx-lg-auto">
+        <h5 class="text-center pt-lg-2"> View KPIs of <%=kpi.firstName%></h5>
+                <!-- Area Chart -->
+            <div class="col-lg-12" id="one">
+              <div class="card shadow mb-4 anyScroll">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row justify-content-center">
+                  <h6 class="m-0 font-weight-bold text-primary">KPIs</h6>
+                  </div>
+                <!-- Card Body -->
+          
+        <% kpi.kpis.forEach(function(x){ %>
+           <div class="card-body">
+                  <h5 class="card-title">Description: <%= x.description %></h5>
+                  <p class="card-text">Rating: <%= x.rating %></p>
+                  </div>
+                 
+                    <hr class="mb-0">
+                  <% }) %>
+                </div>
+                <button type="button" class="btn btn-info"><a href="/profile/<%=kpi._id%>/kpi/new">Add New Kpi</a></button>
+              </div>
+   
+          
+          </div> 
+
+
+
+
+
+
+<% include ../partials/footer %>

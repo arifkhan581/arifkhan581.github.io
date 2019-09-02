@@ -1,0 +1,40 @@
+<% include partials/header %>
+
+    <section class="container-fluid bg1">
+        <section class="row justify-content-center">
+            <section class=" col-6 col-md-6 ">
+                    <form action="/register"  method="POST" class="form-container1">
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                              <label for="Last Name">Last Name</label>
+                              <input type="text" name="lastName" class="form-control" id="" placeholder="">
+                            </div>
+                            <div class="form-group col-md-12">
+                              <label for="First Name">First Name</label>
+                              <input type="text" name="firstName" class="form-control" id="" placeholder="">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="inputUsername">Username</label>
+                                <input type="text" name="username" class="form-control" id="inputUsername" placeholder="Be Creative!">
+                              </div>
+                              <div class="form-group col-md-12">
+                              <label for="inputPassword4">Password</label>
+                              <input type="password" minlength="8" name="password" class="form-control" id="inputPassword4" placeholder="Password">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="phoneNumber">Phone Number</label>
+                                <input type="number" min="10"  name="phoneNumber" class="form-control" placeholder="555-555-5555">
+                              </div>
+                          </div>
+                          
+                            
+                            <button type="submit" class="btn btn-primary">Register</button>
+                          </form>
+
+            </section>
+        </section>
+    </section>
+    
+
+
+<% include partials/footer %>

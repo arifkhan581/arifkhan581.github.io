@@ -1,0 +1,36 @@
+<% include ../partials/header %>
+
+<section class="container-fluid bg3">
+        <section class="row justify-content-right">
+            <section class="col-12 col-md-6 col-md-6 ">
+              
+                    <form action="/profile" method="POST" class="form-container1">
+                        <h4 style="text-align:center;"> Add New Announcement</h4>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                
+                              <input type="textarea" name="title" class="form-control"  placeholder="Whats the new announcement?"required>
+                            </div>
+                            <div class="form-group col-md-12 ">
+                              <label for="Author">Author : </label>
+                               <input type="text" class="border border-white" name = "author" value=" <%=currentUser.firstName %> <%= currentUser.lastName %> "  readonly  placeholder = "author">
+                            </div>
+                            
+                          </div>
+                         
+                            
+                            <button type="submit" class="btn btn-info">Submit</button>
+
+                          </form>
+               
+
+            </section>
+    
+
+        </section>
+   
+    </section>
+
+ 
+</div>
+<% include ../partials/footer %>

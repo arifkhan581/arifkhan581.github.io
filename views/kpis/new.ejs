@@ -1,0 +1,44 @@
+<% include ../partials/header %>
+
+ 
+<section class="container-fluid bg3">
+    <div>
+        <section class="row justify-content-center">
+            <section class="col-11 col-md-6 col-md-6 ">
+              
+                    <form action="/profile/<%=kpi._id%>/kpi"  method="POST" class="form-container1">
+                        <h4 style="text-align:center;"> Add New KPI for <%=kpi.firstName%></h4>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                              <label for="Description">Description</label>
+                              <input type="textarea" name="kpi[description]" class="form-control"  placeholder="Add a Goal">
+                            </div>
+                            <div class="form-group col-md-12">
+                              <label for="Rating">Rating</label>
+                              <input type="number" min="1" max="5" name = "kpi[rating]" class="form-control" placeholder="Rate this KPI between 1 to 5">
+                            </div>
+                            
+                          </div>
+                          
+                            
+                            <button type="submit" class="btn btn-info">Submit</button>
+                            <button 
+                                 class="suggestionColor btn btn-light border rounded "type="button"><a href="/profile">Return to Profile</a>
+                                 </button>
+                          </form>
+ 
+            </section>
+  
+        </section>
+               <img  class="d-none d-sm-block" src="https://i.ibb.co/ftv2JmY/monkey-four.jpg" alt="monkey-four" border="0"
+style=
+" position: absolute;
+    bottom:0px;
+    left:0px;
+    ">
+</div>
+    </section>
+
+         
+ 
+<% include ../partials/footer %>

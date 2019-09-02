@@ -1,0 +1,27 @@
+<% include ../partials/header %>
+
+ <section class="container-fluid bg2">
+        <section class="row justify-content-center">
+            <section class="col-12 col-md-6 col-md-6">
+                    <form action="/profile/<%=vacation._id%>/vacation"  method="POST" class="form-container1">
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                              <label for="Vacation">Title</label>
+                              <input type="text" name="vacation[title]" class="form-control"  placeholder="<%=vacation.firstName%> - Start Date - End Date">
+                            </div>
+                            <div class="form-group col-md-12">
+                              <label for="Description">Description</label>
+                              <input type="textarea" class"area1" name="vacation[description]" class="form-control" placeholder="Reason for your vacations">
+                            </div>
+                            
+                          </div>
+                          
+                            
+                            <button type="submit" class="btn btn-primary">Submit Your Vacation</button>
+                          </form>
+
+            </section>
+        </section>
+    </section>
+
+<% include ../partials/footer %>
